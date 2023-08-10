@@ -42,8 +42,7 @@ https://github.com/vksep07/notification_app/assets/16042343/1385818a-1741-4879-b
 Clone the repo
 
 ```bash
-  git clone https://github.com/vksep07/crypto_assement_repo.git
-```
+  git clone https://github.com/vksep07/notification_app.git
 
 Install the dependencies
 
