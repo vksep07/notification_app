@@ -1,63 +1,50 @@
 {
   "project_info": {
-    "project_number": "348465630179",
-    "project_id": "flutter-notification-d252d",
-    "storage_bucket": "flutter-notification-d252d.appspot.com"
+    "project_number": "516736733084",
+    "firebase_url": "https://customer-app-3ac02.firebaseio.com",
+    "project_id": "customer-app-3ac02",
+    "storage_bucket": "customer-app-3ac02.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:348465630179:android:13f018a2ddc5a2d8102ed6",
+        "mobilesdk_app_id": "1:516736733084:android:335bb55feda2e5f0300259",
         "android_client_info": {
-          "package_name": "com.example.fcm_flutter_notification"
+          "package_name": "in.captainfresh.customer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
+          "client_id": "516736733084-sgblaia9p15l7fmcekkfmcpl75ngu5a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.captainfresh.customer",
+            "certificate_hash": "fae7f7da65038dc61fdb0303eac8382a9b8895cf"
+          }
+        },
+        {
+          "client_id": "516736733084-khau5s5htuln0hm71fpap6586rogmsjv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC19FCIQTozlzENUX-3k-w2Cy8RhB6opSo"
+          "current_key": "AIzaSyA57AoxpVgGhmguZPE2qupG3edmJXu2nCQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
+              "client_id": "516736733084-khau5s5htuln0hm71fpap6586rogmsjv.apps.googleusercontent.com",
               "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:348465630179:android:058e45b9bb878c03102ed6",
-        "android_client_info": {
-          "package_name": "com.example.notification_mindtech_assigment"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC19FCIQTozlzENUX-3k-w2Cy8RhB6opSo"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
+            },
             {
-              "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
-              "client_type": 3
+              "client_id": "516736733084-i310s7n1rofg867gts8kc1iajbkcnjo1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.captainfresh.customer"
+              }
             }
           ]
         }

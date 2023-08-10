@@ -46,7 +46,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  firebase_core_platform_interface: 4.5.1
+  #firebase_core_platform_interface: 4.5.1
+  firebase_core: ^1.23.0
   flutter_local_notifications: ^9.8.0+1
   firebase_messaging: ^11.2.11
   http: ^0.13.6
@@ -57,6 +58,7 @@ dev_dependencies:
   intl: ^0.18.1
   fluttertoast: ^8.0.8
   cached_network_image: ^3.2.2
+  change_app_package_name: ^1.1.0
 
 
 # For information on the generic Dart part of this file, see the
