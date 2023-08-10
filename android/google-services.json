@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "348465630179",
+    "project_id": "flutter-notification-d252d",
+    "storage_bucket": "flutter-notification-d252d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348465630179:android:13f018a2ddc5a2d8102ed6",
+        "android_client_info": {
+          "package_name": "com.example.fcm_flutter_notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC19FCIQTozlzENUX-3k-w2Cy8RhB6opSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348465630179:android:058e45b9bb878c03102ed6",
+        "android_client_info": {
+          "package_name": "com.example.notification_mindtech_assigment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC19FCIQTozlzENUX-3k-w2Cy8RhB6opSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348465630179-7hakc6k8hdoebh90np3qcmmh8lhi6o9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
