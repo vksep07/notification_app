@@ -57,15 +57,7 @@ class PushNotificationsManager {
 
     });
 
-    FirebaseMessaging.instance.subscribeToTopic("CaptainFreshReseller");
-  }
-
-  static void getToken({String? customerId}) {
-    FirebaseMessaging.instance.getToken().then((token) {
-      assert(token != null);
-      print("Push Messaging token: $token");
-
-    });
+    FirebaseMessaging.instance.subscribeToTopic("NotificationApp");
   }
 
   static Future displayNotification(NotificationData model, String data) async {
@@ -175,49 +167,6 @@ class PushNotificationsManager {
     }
   }
 
-  static checkTypeOfNotification(NotificationData model) {}
-
-  static void generateLocalNotification(
-      {String? message,
-      String? title,
-      String? appData,
-      String? imageUrl,
-      String? notificationType,
-      String? silentNotification,
-      String? timestamp,
-      int? notificationId,
-      String? storeId}) {
-    return;
-    NotificationData? data = new NotificationData(
-        message: message ?? "",
-        title: title ?? "",
-        appData: new NotificationAppDataModel(name: storeId, age: appData),
-        imageUrl: imageUrl ?? "",
-        notificationType: notificationType ?? "",
-        silentNotification: silentNotification ?? "",
-        timestamp: timestamp ?? "");
-    PushNotificationsManager.generateNotification(
-        notificationData: data, notificationId: notificationId ?? randomNotificationId());
-  }
-
-  static Future generateNotification({NotificationData? notificationData, int? notificationId}) async {
-    AppLogger.printLog("generateLocalNotification step 1");
-    var androidPlatformChannelSpecifics = new AndroidNotificationDetails('basic_channel', 'CaptainFresh',
-        channelDescription: 'CaptainFresh Description', importance: Importance.max, priority: Priority.high);
-    IOSNotificationDetails iOSPlatformChannelSpecifics = IOSNotificationDetails(
-      threadIdentifier: "thread1",
-    );
-    var platformChannelSpecifics =
-        new NotificationDetails(android: androidPlatformChannelSpecifics, iOS: iOSPlatformChannelSpecifics);
-    flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
-    await flutterLocalNotificationsPlugin!.show(
-      notificationId ?? 0,
-      notificationData!.title,
-      notificationData.message,
-      platformChannelSpecifics,
-      payload: jsonEncode(notificationData.toJson()),
-    );
-  }
 
   static void handleRecieveNotificationData(Map<String, dynamic> message) {
      // ToastUtils.showInfoToast(msg: "handleRecieveNotificationData", toastLenght: Toast.LENGTH_LONG);
@@ -228,9 +177,7 @@ class PushNotificationsManager {
     //displayNotification(model, json.encode(model));
   }
 
-  static void openScreenOnLaunchAndOnResume(Map<String, dynamic> message) {
-    AppLogger.printLog("onresume onSelectNotification data--" + message.toString());
-  }
+
 
   static NotificationData whenNotificationReceviedBackGeound(Map<String, dynamic> message) {
     AppLogger.printLog('whenNotificationReceviedBackGeound step 1: ');
@@ -288,45 +235,6 @@ class PushNotificationsManager {
     }*/
   }
 
-  static Future<void> showProgressNotification(
-      {int? progress, String? notificationTitle, String? notificationDesc, String? progressPercentage}) async {
-    final AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-        'progress channel', 'progress channel',
-        channelShowBadge: false,
-        importance: Importance.max,
-        priority: Priority.high,
-        onlyAlertOnce: true,
-        showProgress: true,
-        maxProgress: 100,
-        progress: progress!);
-    final NotificationDetails platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
-    await flutterLocalNotificationsPlugin!
-        .show(001, '$notificationTitle', '$notificationDesc', platformChannelSpecifics, payload: '');
-  }
 
-  void openTestNotification() {
-    NotificationData? data = new NotificationData(
-        message: "Click here to open the file",
-        title: "File Downloaded Sucessfully!",
-        appData: new NotificationAppDataModel(),
-        imageUrl: "",
-        notificationType: NOTIFICATION,
-        silentNotification: "",
-        timestamp: "");
-    PushNotificationsManager.generateNotification(
-        notificationData: data, notificationId: 007 ?? randomNotificationId());
-    /* PushNotificationsManager.generateLocalNotification(
-        notificationData: data, notificationId: 0231);*/
-  }
 
-  static int randomNotificationId() {
-    Random random = new Random();
-    int randomNumber = random.nextInt(1000);
-    return randomNumber;
-  }
-
-  static void handleBackgroundNotificationData() {
-    ToastUtils.showInfoToast(msg: "varun -}", toastLenght: Toast.LENGTH_LONG);
-
-  }
 }
