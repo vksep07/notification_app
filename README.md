@@ -7,7 +7,7 @@ In this project we are using the clean architecture  with following folder break
 
 ## Logo
 
-<img src="https://raw.githubusercontent.com/vksep07/notification_app/main/assets/images/notification-bell-svgrepo-com.png" alt="drawing" style="width:400px;"/>
+<img src="https://github.com/vksep07/notification_app/blob/main/assets/images/notification-bell-svgrepo-com_white.png" alt="drawing" style="width:400px;"/>
 
 
 ## Features
