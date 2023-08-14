@@ -216,7 +216,7 @@ class PushNotificationsManager {
   }
 
   static Future<void> myBackgroundMessageHandler(RemoteMessage message) async {
-    AppLogger.printLog(" myBackgroundMessageHandler  i AM CALLING: ");
+    AppLogger.printLog(" myBackgroundMessageHandler  i AM CALLING:  ${message.toMap()}");
     //ToastUtils.showInfoToast(msg: "myBackgroundMessageHandler", toastLenght: Toast.LENGTH_LONG);
     /*if (message.data.isNotEmpty) {
       // Handle data message
