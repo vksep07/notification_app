@@ -26,9 +26,13 @@ In this project we are using the clean architecture  with following folder break
 ## App Preview Video
 
 
-Android Video -  https://github.com/vksep07/notification_app/assets/16042343/1385818a-1741-4879-bcaf-49993ead6d05
+Android Video -  
 
-IOS - https://github.com/vksep07/notification_app/assets/16042343/0e530ffa-a5fc-41d8-a696-c145eb9b2901
+https://github.com/vksep07/notification_app/assets/16042343/1385818a-1741-4879-bcaf-49993ead6d05
+
+IOS Video - 
+
+https://github.com/vksep07/notification_app/assets/16042343/0e530ffa-a5fc-41d8-a696-c145eb9b2901
 
 
 ## Requirements
